@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="true" android:background="@color/navy">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:padding="20dp">
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:orientation="vertical">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="@string/subtitle" android:textSize="11sp"
+                android:textColor="@color/mint" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" android:text="@string/title"
+                android:textColor="@color/white" android:textSize="22sp"
+                android:textStyle="bold" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="4dp" android:text="@string/student"
+                android:textColor="@color/muted" android:textSize="13sp" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="18dp" android:padding="18dp" android:gravity="center"
+                android:orientation="vertical" android:background="@drawable/bg_panel">
+                <TextView android:id="@+id/tvStatus" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="@string/status_paused"
+                    android:textColor="@color/orange" android:textSize="12sp" />
+                <TextView android:id="@+id/tvTime" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_marginTop="5dp"
+                    android:text="@string/zero_time" android:fontFamily="monospace"
+                    android:textColor="@color/white" android:textSize="43sp"
+                    android:textStyle="bold" />
+                <TextView android:id="@+id/tvRecreate" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:textColor="@color/muted"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_marginStart="24dp" android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button android:id="@+id/btnStartPause" android:layout_width="0dp"
+                    android:layout_height="48dp" android:layout_weight="1"
+                    android:background="@drawable/bg_primary" android:text="@string/start"
+                    android:textAllCaps="false" android:textColor="@color/navy" />
+                <Button android:id="@+id/btnLap" android:layout_width="0dp"
+                    android:layout_height="48dp" android:layout_marginStart="8dp"
+                    android:layout_weight="1" android:background="@drawable/bg_secondary"
+                    android:text="@string/lap" android:textAllCaps="false"
+                    android:textColor="@color/white" />
+                <Button android:id="@+id/btnReset" android:layout_width="0dp"
+                    android:layout_height="48dp" android:layout_marginStart="8dp"
+                    android:layout_weight="1" android:background="@drawable/bg_secondary"
+                    android:text="@string/reset" android:textAllCaps="false"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+            <CheckBox android:id="@+id/checkPauseOnBackground" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="14dp"
+                android:text="@string/pause_in_background" android:textColor="@color/white" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" android:text="@string/lap_heading"
+                android:textColor="@color/mint" android:textSize="12sp" />
+            <TextView android:id="@+id/tvLaps" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="8dp"
+                android:background="@drawable/bg_panel" android:padding="16dp"
+                android:text="@string/no_laps" android:textColor="@color/white"
+                android:textSize="14sp" android:lineSpacingExtra="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
