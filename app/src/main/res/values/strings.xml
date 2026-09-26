@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">A2_241A010591</string>
+    <string name="title">ĐỒNG HỒ BẤM GIỜ</string>
+    <string name="subtitle">LAB A2  /  VÒNG ĐỜI ACTIVITY</string>
+    <string name="student">Trần Tuấn Tú · 241A010591</string>
+    <string name="zero_time">00:00.0</string>
+    <string name="start">Bắt đầu</string>
+    <string name="pause">Tạm dừng</string>
+    <string name="reset">Đặt lại</string>
+    <string name="lap">Ghi vòng</string>
+    <string name="lap_heading">CÁC VÒNG ĐÃ GHI</string>
+    <string name="no_laps">Chưa có vòng nào. Bắt đầu đếm giờ rồi nhấn Ghi vòng.</string>
+    <string name="lap_item">Vòng %1$d     %2$s</string>
+    <string name="status_running">ĐANG CHẠY</string>
+    <string name="status_paused">ĐANG TẠM DỪNG</string>
+    <string name="recreate_count">Activity đã tạo lại: %1$d lần</string>
+    <string name="pause_in_background">Dừng khi ra nền</string>
+    <string name="hint_background">Bật để tự tạm dừng khi nhấn Home.</string>
+</resources>
